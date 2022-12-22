@@ -27,3 +27,22 @@ export const getAllPublished = async () => {
 		return getPageMetaData(post)
 	})
 }
+
+const getPageMetaData = (post) => {
+	const getTags = (tags) => {
+		const allTags = tags.map((tag) => {
+			return tag.name
+		})
+
+		return allTags
+	}
+
+	return {
+		id: post.id,
+		title: post.properties.Name.title[0].plain_text,
+		tags: getTags(post.properties.Tags.multi_select),
+		description: post.properties.Description.rich_text[0].plain_text,
+		date: getToday(post.properties.Date.last_edited_time),
+		slug: post.properties.Slug.rich_text[0].plain_text,
+	}
+}
