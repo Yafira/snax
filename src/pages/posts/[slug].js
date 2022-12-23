@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown'
-import { getAllPublished, getSingleBlogPostBySlug } from '../../lib/notion'
+import { getAllPublished, getSingleBlogPostBySlug } from '../../lib/notion.js'
 
 const Post = ({ post }) => {
 	return (
@@ -11,9 +11,9 @@ const Post = ({ post }) => {
 		</section>
 	)
 }
+
 export const getStaticProps = async ({ params }) => {
 	const post = await getSingleBlogPostBySlug(params.slug)
-
 	return {
 		props: {
 			post,
@@ -25,9 +25,10 @@ export const getStaticProps = async ({ params }) => {
 export const getStaticPaths = async () => {
 	const posts = await getAllPublished()
 	const paths = posts.map(({ slug }) => ({ params: { slug } }))
-
 	return {
 		paths,
 		fallback: 'blocking',
 	}
 }
+
+export default Post
