@@ -10,19 +10,16 @@ export default function Home({ posts }) {
 	return (
 		<div className={styles.container}>
 			<Header />
-			<main className={styles.main}>
+			<main className={`${styles.columns} ${styles.main}`}>
 				{posts.map((post, index) => (
 					<section key={index} className={styles.card}>
 						<div>
 							<h2>
-								<Link
-									href={`/posts/${post.slug}`}
-									className={styles.action}
-								></Link>
+								<Link href={`/posts/${post.slug}`}></Link>
 							</h2>
 							<div>{post.date}</div>
 						</div>
-						<div id='columns'>
+						<div>
 							<Image
 								unoptimized
 								src={post.image}

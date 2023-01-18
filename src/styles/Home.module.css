@@ -8,12 +8,24 @@
 	text-align: center;
 }
 
-#columns {
+.columns {
 	column-width: 300px;
 	column-gap: 15px;
 	width: 90%;
-	max-width: 1100px;
-	margin: 50px auto;
+	padding: 50px;
+}
+
+.columns small {
+	font-size: 1rem;
+	float: right;
+	text-transform: uppercase;
+	color: #aaa;
+}
+
+.columns small a {
+	color: #666;
+	text-decoration: none;
+	transition: 0.4s color;
 }
 
 .card {
@@ -50,23 +62,10 @@
 .card h4 {
 	font-size: 1rem;
 	color: rgb(0, 0, 0);
-	background-color: rgb(188, 238, 233);
+	background-color: rgb(224, 247, 231);
 	border: #000 1px solid;
 	display: inline;
 	line-height: 1.5;
-}
-
-#columns small {
-	font-size: 1rem;
-	float: right;
-	text-transform: uppercase;
-	color: #aaa;
-}
-
-#columns small a {
-	color: #666;
-	text-decoration: none;
-	transition: 0.4s color;
 }
 
 /* div#columns:hover pin:not(:hover) {
@@ -74,10 +73,10 @@
 } */
 
 @media screen and (max-width: 750px) {
-	#columns {
+	.columns {
 		column-gap: 0px;
 	}
-	#columns pin {
+	.columns pin {
 		width: 100%;
 	}
 }
