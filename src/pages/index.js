@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { getAllPublished } from '../lib/notion'
 import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
-import '../styles/Header.module.css'
 
 export default function Home({ posts }) {
 	if (!posts) return <h1>No posts</h1>

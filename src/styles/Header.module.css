@@ -9,6 +9,7 @@
 }
 
 .Header {
+	font-family: 'Courier New', Courier, monospace;
 	background-color: rgb(224, 247, 231);
 	padding: 20px;
 }
