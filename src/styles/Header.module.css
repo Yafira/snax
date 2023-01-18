@@ -1,0 +1,26 @@
+.logo {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 20px 50px;
+	border: solid rgb(199, 179, 252);
+	border-radius: 50%;
+	background-color: wheat;
+}
+
+.Header {
+	background-color: rgb(224, 247, 231);
+	padding: 20px;
+}
+
+.Header h1 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 50px;
+	color: rgb(181, 176, 252);
+}
+
+.Header p {
+	margin-top: 5px;
+	color: cornflowerblue;
+}
