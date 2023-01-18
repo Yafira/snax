@@ -30,6 +30,7 @@ export default function Home({ posts }) {
 							<h3>{post.title}</h3>
 							<h4>{post.rating}</h4>
 							<p>{post.description}</p>
+							<h5>{post.tags}</h5>
 						</div>
 					</section>
 				))}

@@ -11,7 +11,6 @@
 .columns {
 	column-width: 300px;
 	column-gap: 15px;
-	width: 90%;
 	padding: 50px;
 }
 
@@ -63,9 +62,20 @@
 	font-size: 1rem;
 	color: rgb(0, 0, 0);
 	background-color: rgb(224, 247, 231);
-	border: #000 1px solid;
+	border: #000 0.5px solid;
 	display: inline;
 	line-height: 1.5;
+}
+
+.card h5 {
+	font-family: 'Helvetica', monospace;
+	padding: 3px;
+	font-size: 0.7rem;
+	font-weight: normal;
+	color: rgb(0, 0, 0);
+	background-color: rgb(253, 233, 250);
+	border: rgb(92, 79, 202) 1px solid;
+	display: inline;
 }
 
 /* div#columns:hover pin:not(:hover) {
