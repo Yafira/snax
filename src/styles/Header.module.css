@@ -3,8 +3,8 @@
 	width: 200px;
 	height: 200px;
 	margin: 20px 50px;
-	border: solid rgb(199, 179, 252);
-	border-radius: 50%;
+	border: 2px solid rgb(199, 179, 252);
+	border-radius: 20%;
 	background-color: wheat;
 }
 
@@ -19,9 +19,10 @@
 	margin-bottom: 0px;
 	font-size: 50px;
 	color: rgb(181, 176, 252);
+	text-decoration: rgb(181, 176, 252) overline;
 }
 
 .Header p {
-	margin-top: 5px;
+	margin-top: 15px;
 	color: cornflowerblue;
 }

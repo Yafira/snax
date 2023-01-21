@@ -11,29 +11,36 @@ export default function Home({ posts }) {
 		<div className={styles.container}>
 			<Header />
 			<main className={`${styles.columns} ${styles.main}`}>
-				{posts.map((post, index) => (
-					<section key={index} className={styles.card}>
-						<div>
-							<h2>
-								<Link href={`/posts/${post.slug}`}></Link>
-							</h2>
-							<div>{post.date}</div>
-						</div>
-						<div>
-							<Image
-								unoptimized
-								src={post.image}
-								width='300'
-								height='300'
-								alt='snack'
-							/>
-							<h3>{post.title}</h3>
-							<h4>{post.rating}</h4>
-							<p>{post.description}</p>
-							<h5>{post.tags}</h5>
-						</div>
-					</section>
-				))}
+				{posts.map((post, index) => {
+					console.log(post.image)
+					return (
+						<section key={index} className={styles.card}>
+							<div>
+								<h2>
+									<Link href={`/posts/${post.slug}`}></Link>
+								</h2>
+								<div>{post.date}</div>
+							</div>
+							<div>
+								<div className={styles.imgWrap}>
+									<Image
+										unoptimized
+										src={post.image}
+										responsive
+										width={260}
+										height={270}
+										alt='snack'
+									/>
+								</div>
+
+								<h3>{post.title}</h3>
+								<h4>{post.rating}</h4>
+								<p>{post.description}</p>
+								<h5>{post.tags}</h5>
+							</div>
+						</section>
+					)
+				})}
 			</main>
 		</div>
 	)
