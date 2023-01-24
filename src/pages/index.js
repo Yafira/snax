@@ -19,7 +19,6 @@ export default function Home({ posts }) {
 								<h2>
 									<Link href={`/posts/${post.slug}`}></Link>
 								</h2>
-								<div>{post.date}</div>
 							</div>
 							<div>
 								<div className={styles.imgWrap}>
