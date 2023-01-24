@@ -30,6 +30,7 @@ export const getAllPublished = async () => {
 
 const getPageMetaData = (post) => {
 	const getTags = (tags) => {
+		console.log('tags', tags)
 		const allTags = tags.map((tag) => {
 			return tag.name
 		})

@@ -12,7 +12,7 @@ export default function Home({ posts }) {
 			<Header />
 			<main className={`${styles.columns} ${styles.main}`}>
 				{posts.map((post, index) => {
-					console.log(post.image)
+					console.log(post.tags)
 					return (
 						<section key={index} className={styles.card}>
 							<div>
@@ -36,7 +36,9 @@ export default function Home({ posts }) {
 								<h3>{post.title}</h3>
 								<h4>{post.rating}</h4>
 								<p>{post.description}</p>
-								<h5>{post.tags}</h5>
+								{post.tags.map((tag, key) => (
+									<h5 key={key}>{tag}</h5>
+								))}
 							</div>
 						</section>
 					)
