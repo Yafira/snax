@@ -69,6 +69,7 @@
 .card h5 {
 	font-family: 'Helvetica', monospace;
 	padding: 3px;
+	margin: 3px;
 	font-size: 0.7rem;
 	font-weight: normal;
 	color: rgb(0, 0, 0);
