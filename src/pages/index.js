@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getAllPublished } from '../lib/notion'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ posts }) {
@@ -43,6 +44,7 @@ export default function Home({ posts }) {
 					)
 				})}
 			</main>
+			<Footer />
 		</div>
 	)
 }
