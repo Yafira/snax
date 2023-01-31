@@ -2,15 +2,10 @@
 
 .Footer h3 {
 	background-color: rgb(255, 255, 241);
+	color: black;
 	font-family: 'Poppins', sans-serif;
 	height: 60px;
-
 	padding-top: 10px;
 	margin: 0;
 	text-align: center;
-}
-
-.icon {
-	color: rgb(223, 187, 249);
-	padding: 0 10px 0;
 }
