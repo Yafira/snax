@@ -83,9 +83,7 @@ function getToday(datestring) {
 const { NotionToMarkdown } = require('notion-to-md')
 const n2m = new NotionToMarkdown({ notionClient: notion })
 
-// Then, create a new function called getSinglePost in /lib/notion.js.
-
-export const getSinglePost = async (slug) => {
+export const getSingleBlogPostBySlug = async (slug) => {
 	const response = await notion.databases.query({
 		database_id: process.env.DATABASE_ID,
 		filter: {
