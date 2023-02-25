@@ -1,12 +1,15 @@
 const { Client } = require('@notionhq/client')
 
+const dbID = process.env.NEXT_PUBLIC_DATABASE_ID
+const notionToken = process.env.NEXT_PUBLIC_NOTION_TOKEN
+
 const notion = new Client({
-	auth: process.env.NOTION_TOKEN,
+	auth: notionToken,
 })
 
 export const getAllPublished = async () => {
 	const posts = await notion.databases.query({
-		database_id: process.env.DATABASE_ID,
+		database_id: dbID,
 		filter: {
 			property: 'Published',
 			checkbox: {
@@ -30,7 +33,7 @@ export const getAllPublished = async () => {
 
 const getPageMetaData = (post) => {
 	const getTags = (tags) => {
-		console.log('tags', tags)
+		//console.log('tags', tags)
 		const allTags = tags.map((tag) => {
 			return tag.name
 		})
@@ -85,7 +88,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion })
 
 export const getSingleBlogPostBySlug = async (slug) => {
 	const response = await notion.databases.query({
-		database_id: process.env.DATABASE_ID,
+		database_id: dbID,
 		filter: {
 			property: 'Slug',
 			formula: {
@@ -104,5 +107,23 @@ export const getSingleBlogPostBySlug = async (slug) => {
 	return {
 		metadata,
 		markdown: mdString,
+	}
+}
+
+export const getPostsByTag = async (tag) => {
+	try {
+		const myPage = await notion.databases.query({
+			database_id: dbID,
+			filter: {
+				property: 'Tags',
+				multi_select: {
+					contains: tag,
+				},
+			},
+		})
+
+		return myPage
+	} catch (err) {
+		console.log(err)
 	}
 }

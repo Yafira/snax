@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { getAllPublished } from '../lib/notion'
+import { getAllPublished, getPostsByTag } from '../lib/notion'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
@@ -13,7 +14,7 @@ export default function Home({ posts }) {
 			<Header />
 			<main className={`${styles.columns} ${styles.main}`}>
 				{posts.map((post, index) => {
-					console.log(post.tags)
+					//console.log(post.tags)
 					return (
 						<section key={index} className={styles.card}>
 							<div>
@@ -37,7 +38,9 @@ export default function Home({ posts }) {
 								<h4>{post.rating}</h4>
 								<p>{post.description}</p>
 								{post.tags.map((tag, key) => (
-									<h5 key={key}>{tag}</h5>
+									<Link key={key} href={`/tags/${tag}`}>
+										<h5>{tag}</h5>
+									</Link>
 								))}
 							</div>
 						</section>
@@ -51,6 +54,8 @@ export default function Home({ posts }) {
 
 export const getStaticProps = async () => {
 	const data = await getAllPublished()
+	await getPostsByTag('recommended')
+
 	return {
 		props: {
 			posts: data,

@@ -1,16 +1,14 @@
 import ReactMarkdown from 'react-markdown'
 import { getAllPublished, getSingleBlogPostBySlug } from '../../lib/notion.js'
 
-const Post = ({ post }) => {
-	return (
-		<section>
-			<h2>{post.metadata.title}</h2>
-			<span>{post.metadata.date}</span>
-			<p>{post.metadata.tags.join(', ')}</p>
-			<ReactMarkdown>{post.markdown}</ReactMarkdown>
-		</section>
-	)
-}
+const Post = ({ post }) => (
+	<section>
+		<h2>{post.metadata.title}</h2>
+		<span>{post.metadata.date}</span>
+		<p>{post.metadata.tags.join(', ')}</p>
+		<ReactMarkdown>{post.markdown}</ReactMarkdown>
+	</section>
+)
 
 export const getStaticProps = async ({ params }) => {
 	const post = await getSingleBlogPostBySlug(params.slug)
