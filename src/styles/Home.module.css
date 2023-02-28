@@ -83,6 +83,14 @@
 	display: inline;
 }
 
+.card a {
+	text-decoration: none;
+}
+.card h5:hover {
+	font-weight: bold;
+	/* color: #a1a1f8; */
+}
+
 .card:hover {
 	border: 3px solid #a1a1f8;
 }

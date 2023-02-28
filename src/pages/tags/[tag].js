@@ -16,16 +16,11 @@ const Tag = ({ posts }) => {
 
 	return (
 		<div>
-			<h1>results</h1>
-			<ul>
+			<span>
 				{posts.map((post, id) => {
-					return (
-						<li key={id}>
-							<img src={post.properties.Image.url} />
-						</li>
-					)
+					return <span key={id}>{<img src={post.properties.Image.url} />}</span>
 				})}
-			</ul>
+			</span>
 		</div>
 	)
 }
