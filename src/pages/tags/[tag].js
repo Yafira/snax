@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { getPostsByTag } from '../../lib/notion'
 
 export async function getServerSideProps({ params }) {
@@ -18,7 +19,20 @@ const Tag = ({ posts }) => {
 		<div>
 			<span>
 				{posts.map((post, id) => {
-					return <span key={id}>{<img src={post.properties.Image.url} />}</span>
+					return (
+						<span key={id}>
+							{
+								<Image
+									unoptimized
+									src={post.properties.Image.url}
+									responsive
+									width={260}
+									height={270}
+									alt='resource'
+								/>
+							}
+						</span>
+					)
 				})}
 			</span>
 		</div>
