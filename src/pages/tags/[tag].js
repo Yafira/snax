@@ -1,7 +1,8 @@
-import { getPostsByTag } from 'src/lib/notion'
-import Header from 'src/components/Header'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import styles from 'src/styles/Home.module.css'
+import { getPostsByTag } from '@/lib/notion'
+import PostListTags from '@/components/PostListTags'
+import styles from '@/styles/Home.module.css'
 
 export async function getServerSideProps({ params }) {
 	const res = await getPostsByTag(params.tag)
@@ -17,6 +18,7 @@ export async function getServerSideProps({ params }) {
 const Tag = ({ posts }) => (
 	<div className={styles.container}>
 		<Header />
+		<PostListTags posts={posts} />
 		<Footer />
 	</div>
 )

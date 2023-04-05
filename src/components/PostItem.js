@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const PostItem = ({ imgURL, title, link, description, tags, tagPage }) => (
+const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 	<section className={styles.card}>
 		<Image
 			unoptimized
@@ -14,7 +14,11 @@ const PostItem = ({ imgURL, title, link, description, tags, tagPage }) => (
 			className={styles.imgWrap}
 		/>
 
+		<h3>{title}</h3>
+
 		<p>{description}</p>
+
+		<h5>{rating}</h5>
 
 		<div className={styles.tags}>
 			{tags.map((tag, key) => {
