@@ -8,7 +8,7 @@ export default function Footer() {
 			<h3>
 				© 2023 Built and designed{' '}
 				<FontAwesomeIcon icon={faHeart} style={{ color: '#B2A4D4' }} /> by
-				Yafira
+				electrocute
 			</h3>
 		</div>
 	)

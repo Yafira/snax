@@ -86,23 +86,20 @@
 }
 
 .card h5 {
-	font-family: 'Helvetica', monospace;
+	font-family: 'Space Mono', monospace;
+	color: rgb(0, 0, 0);
 	padding: 3px;
 	margin: 2px;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	font-weight: normal;
-	color: rgb(0, 0, 0);
-	background-color: rgb(253, 233, 250);
+	background-color: rgb(255, 227, 237);
 	border: rgb(92, 79, 202) 1px solid;
 	display: inline;
 }
 
-.card a {
-	text-decoration: none;
-}
 .card h5:hover {
 	font-weight: bold;
-	/* color: #a1a1f8; */
+	color: #a1a1f8;
 }
 
 .card:hover {

@@ -1,11 +1,11 @@
 .logo {
 	display: inline-block;
-	width: 200px;
-	height: 200px;
+	width: 120px;
+	height: 120px;
 	margin: 20px 50px;
 	border: 2px solid rgb(199, 179, 252);
 	border-radius: 20%;
-	background-color: wheat;
+	background-color: rgb(248, 231, 199);
 }
 
 .Header {
@@ -15,14 +15,18 @@
 }
 
 .Header h1 {
-	margin-top: 10px;
-	margin-bottom: 0px;
+	margin: 0px;
 	font-size: 50px;
 	color: rgb(181, 176, 252);
 	text-decoration: rgb(181, 176, 252) overline;
 }
 
+.Header h5 {
+	margin-top: 5px;
+	color: rgb(240, 173, 211);
+}
+
 .Header p {
-	margin-top: 15px;
+	margin-top: 5px;
 	color: cornflowerblue;
 }

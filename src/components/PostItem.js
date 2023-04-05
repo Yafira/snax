@@ -18,7 +18,7 @@ const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 
 		<p>{description}</p>
 
-		<h5>{rating}</h5>
+		<h4>{rating}</h4>
 
 		<div className={styles.tags}>
 			{tags.map((tag, key) => {
