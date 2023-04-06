@@ -3,6 +3,14 @@
 	margin-bottom: 100px;
 }
 
+.Header a {
+	text-decoration: none;
+}
+
+.Header a:hover {
+	color: rgb(187, 185, 253);
+}
+
 .bgWrap {
 	position: fixed;
 	height: 100vh;

@@ -87,9 +87,9 @@
 .card h5 {
 	font-family: 'Space Mono', monospace;
 	color: rgb(0, 0, 0);
-	padding: 3px;
-	margin: 2px;
-	font-size: 0.6rem;
+	padding: 0 6px;
+	margin: 3px;
+	font-size: 0.8rem;
 	font-weight: normal;
 	background-color: rgb(255, 227, 237);
 	border: rgb(92, 79, 202) 1px solid;
