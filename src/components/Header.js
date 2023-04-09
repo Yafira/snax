@@ -18,7 +18,7 @@ export default function Header() {
 					<h1>Snax</h1>
 				</Link>
 
-				<p>Like a Pokedex but for vegan-friendly snacks and other finds</p>
+				<p>Like a Pokedex but for vegan snacks and other finds</p>
 				<h5>All snacks are consumed and reviewed by Yafira</h5>
 			</div>
 		</div>
