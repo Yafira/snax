@@ -27,7 +27,7 @@ export const getStaticProps = async ({ params }) => {
 
 export const getStaticPaths = async () => {
 	const posts = await getAllPublished()
-	const paths = posts.map(({ title }) => ({ params: { title } }))
+	const paths = posts.map(({ title }) => ({ params: { snack: title } }))
 	return {
 		paths,
 		fallback: 'blocking',

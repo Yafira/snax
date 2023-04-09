@@ -84,7 +84,7 @@ function getToday(datestring) {
 const { NotionToMarkdown } = require('notion-to-md')
 const n2m = new NotionToMarkdown({ notionClient: notion })
 
-export const getPostByResource = async (snack) => {
+export const getPostBySnack = async (snack) => {
 	const response = await notion.databases.query({
 		database_id: dbID,
 		filter: {
