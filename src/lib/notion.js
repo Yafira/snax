@@ -33,7 +33,6 @@ export const getAllPublished = async () => {
 
 const getPageMetaData = (post) => {
 	const getTags = (tags) => {
-		//console.log('tags', tags)
 		const allTags = tags.map((tag) => {
 			return tag.name
 		})
@@ -43,13 +42,12 @@ const getPageMetaData = (post) => {
 
 	return {
 		id: post.id,
-		title: post.properties.Name.title[0].plain_text,
-		tags: getTags(post.properties.Tags.multi_select),
-		image: post.properties.Image.url,
+		title: post.properties.Snack.title[0].plain_text,
 		rating: post.properties.Rating.rich_text[0].plain_text,
 		description: post.properties.Description.rich_text[0].plain_text,
+		image: post.properties.Image.url,
+		tags: getTags(post.properties.Tags.multi_select),
 		date: getToday(post.properties.Date.created_time),
-		slug: post.properties.Slug.rich_text[0].plain_text,
 	}
 }
 
@@ -86,14 +84,14 @@ function getToday(datestring) {
 const { NotionToMarkdown } = require('notion-to-md')
 const n2m = new NotionToMarkdown({ notionClient: notion })
 
-export const getSingleBlogPostBySlug = async (slug) => {
+export const getPostByResource = async (snack) => {
 	const response = await notion.databases.query({
 		database_id: dbID,
 		filter: {
-			property: 'Slug',
+			property: 'Snack',
 			formula: {
 				string: {
-					equals: slug,
+					equals: snack,
 				},
 			},
 		},

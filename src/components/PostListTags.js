@@ -10,8 +10,7 @@ export default function PostListIndex({ posts }) {
 				<PostItem
 					key={index}
 					imgURL={post.properties.Image.url}
-					title={post.properties.Name.title[0].text.content}
-					slug={post.properties.Slug.rich_text[0].text.content}
+					title={post.properties.Snack.title[0].text.content}
 					rating={post.properties.Rating.rich_text[0].text.content}
 					description={post.properties.Description.rich_text[0].text.content}
 					tags={post.properties.Tags.multi_select}
