@@ -65,3 +65,14 @@
 	color: rgb(173, 159, 251);
 	font-weight: 200;
 }
+
+@media screen and (max-width: 750px) {
+	.Header h1 {
+		font-size: 30px;
+		text-decoration: none;
+	}
+	.Header p {
+		font-size: 15px;
+		text-decoration: none;
+	}
+}
