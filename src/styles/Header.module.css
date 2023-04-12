@@ -1,6 +1,7 @@
 .Header {
 	font-family: 'Space Mono', monospace;
 	margin-bottom: 100px;
+	user-select: none;
 }
 
 .Header a {
@@ -20,10 +21,10 @@
 }
 
 .logo {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	margin: 30px 60px;
-	padding: 5px;
+	padding: 12px;
 	border: 3px solid rgb(199, 179, 252);
 	border-radius: 50%;
 	background-color: rgb(248, 231, 199);
@@ -33,7 +34,11 @@
 	display: inline-block;
 	border: rgb(0, 0, 0) 1px solid;
 	position: relative;
-	background: linear-gradient(90deg, #ffe3fc 0%, #e6fff9 100%);
+	background: linear-gradient(
+		90deg,
+		rgb(255, 244, 247) 0%,
+		rgb(250, 227, 236) 100%
+	);
 	text-align: center;
 	/* padding: 25px; */
 	margin-top: 100px;
@@ -41,21 +46,22 @@
 
 .snaxBox h1 {
 	margin: 0;
-	font-size: 45px;
-	/* text-decoration: rgb(181, 176, 252) overline; */
+	font-size: 55px;
 }
 
 .snaxBox h5 {
-	color: rgb(173, 159, 251);
-}
-
-.snaxBox h6 {
+	color: rgb(98, 174, 246);
+	font-size: 15px;
 	font-weight: 100;
-	/* padding: 0 40px; */
-	color: rgb(0, 0, 0);
 }
 
 .snaxBox p {
+	font-size: 18px;
 	padding: 0 40px;
 	color: rgb(0, 0, 0);
+}
+
+.snaxBox a {
+	color: rgb(173, 159, 251);
+	font-weight: 200;
 }
