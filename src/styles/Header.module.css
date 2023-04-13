@@ -30,6 +30,16 @@
 	background-color: rgb(248, 231, 199);
 }
 
+.logo:hover {
+	width: 150px;
+	height: 150px;
+	margin: 30px 60px;
+	padding: 12px;
+	border: 3px solid rgb(199, 179, 252);
+	border-radius: 50%;
+	background-color: #f3ffeb;
+}
+
 .snaxBox {
 	display: inline-block;
 	border: rgb(0, 0, 0) 1px solid;
