@@ -114,6 +114,18 @@
 	justify-content: center;
 }
 
+.hrec h5 {
+	background-color: rgb(246, 173, 246);
+}
+
+.rec h5 {
+	background-color: rgb(211, 244, 161);
+}
+
+.outstanding h5 {
+	background-color: rgb(177, 241, 243);
+}
+
 @media screen and (max-width: 750px) {
 	.columns {
 		column-gap: 0px;

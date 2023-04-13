@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { clsx } from 'clsx'
 
 const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 	<section className={styles.card}>
@@ -26,7 +27,15 @@ const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 
 				return (
 					<Link key={key} href={`/tags/${tagText}`}>
-						<h5>{tagText}</h5>
+						<div
+							className={clsx({
+								[styles.hrec]: tagText === 'highly recommended',
+								[styles.rec]: tagText === 'recommended',
+								[styles.outstanding]: tagText === 'outstanding',
+							})}
+						>
+							<h5>{tagText}</h5>
+						</div>
 					</Link>
 				)
 			})}
