@@ -15,8 +15,6 @@ export default function Header() {
 			<div className={styles.snaxBox}>
 				<Link href='/'>
 					<Image className={styles.logo} src={Logo} alt='logo' />
-				</Link>
-				<Link href='/'>
 					<h1>Snax</h1>
 				</Link>
 
