@@ -15,10 +15,12 @@ export default function Header() {
 			<div className={styles.snaxBox}>
 				<Link href='/'>
 					<Image className={styles.logo} src={Logo} alt='logo' />
-					<h1>Snax</h1>
+					<h1>snax</h1>
 				</Link>
-
-				<p>Like a Pokedex but for vegan snacks and other finds</p>
+				<h3>
+					<i>Eat, drink, color</i>
+				</h3>
+				<p>Like a Pokedex but for vegan and plant-based snacks </p>
 				<h5>
 					All snacks are consumed and reviewed by
 					<Link href='https://yafira.dev'> Yafira ✿ </Link>
