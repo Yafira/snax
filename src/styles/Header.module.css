@@ -73,7 +73,7 @@
 .snaxBox h5 {
 	color: rgb(0, 0, 0);
 	font-size: 12px;
-	padding: 8px;
+	padding: 0px;
 	margin: 20px;
 	font-weight: 00;
 }
@@ -81,7 +81,7 @@
 .snaxBox p {
 	font-size: 13px;
 	padding: 0 40px;
-	margin: 0;
+	margin: 8px;
 	color: rgb(0, 0, 0);
 }
 
