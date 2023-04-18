@@ -8,6 +8,16 @@
 	text-align: center;
 }
 
+.Footer a {
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(224, 126, 237);
+}
+
+.Footer a:hover {
+	color: rgb(215, 175, 240);
+}
+
 @media screen and (max-width: 750px) {
 	.Footer h3 {
 		font-size: 13px;
