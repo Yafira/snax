@@ -1,2 +1,2 @@
-- [ ] filter snacks by tags
+- [x] filter snacks by tags
 - [ ] implement search bar
