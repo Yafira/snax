@@ -91,14 +91,14 @@
 }
 
 @media screen and (max-width: 750px) {
+	.snaxBox p {
+		font-size: 11px;
+	}
 	.Header h1 {
 		font-size: 30px;
 		/* text-decoration: none; */
 	}
 	.Header h5 {
-		font-size: 12px;
-	}
-	.Header p {
 		font-size: 10px;
 	}
 }
