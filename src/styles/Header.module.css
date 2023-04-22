@@ -93,6 +93,7 @@
 @media screen and (max-width: 750px) {
 	.snaxBox p {
 		font-size: 11px;
+		padding: 5px;
 	}
 	.Header h1 {
 		font-size: 30px;
