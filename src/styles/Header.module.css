@@ -91,14 +91,9 @@
 }
 
 @media screen and (max-width: 750px) {
-	.logo {
-		width: 100px;
-		height: 100px;
-		margin: 20px;
+	.Header {
+		/* padding-bottom: 500px; */
 		padding: 10px;
-		border: 3px solid rgb(199, 179, 252);
-		border-radius: 50%;
-		background-color: rgb(248, 231, 199);
 	}
 	.Header h1 {
 		font-size: 30px;
@@ -112,5 +107,16 @@
 		font-size: 11px;
 		margin: 0;
 		text-decoration: none;
+	}
+	.snaxBox {
+		display: inline-block;
+		border-radius: 50px;
+		margin-top: 405px;
+	}
+	.snaxBox p {
+		font-size: 15px;
+		padding: 0 50px;
+		margin: 8px;
+		color: rgb(0, 0, 0);
 	}
 }
