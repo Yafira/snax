@@ -18,8 +18,9 @@ export default function Header() {
 					<h1>snax</h1>
 				</Link>
 				<h3>Eat, drink, color</h3>
-				<p>Like a Pokedex but for vegan and plant-based snacks, </p>
-				<p>(also peanut-free) </p>
+				<p>
+					Like a Pokedex but for vegan and plant-based snacks (also peanut-free){' '}
+				</p>
 				<h5>
 					All snacks are consumed and reviewed by
 					<Link href='https://yafira.dev'> Yafira ✿ </Link>
