@@ -17,9 +17,9 @@ export default function Header() {
 					<Image className={styles.logo} src={Logo} alt='logo' />
 					<h1>snax</h1>
 				</Link>
-				<h3>Eat, drink, color</h3>
+				<h3>eat, drink, color</h3>
 				<p>
-					Like a Pokedex but for vegan and plant-based snacks (also peanut-free){' '}
+					Like a Pokedex but for vegan and plant-based snacks, also peanut-free.{' '}
 				</p>
 				<h5>
 					All snacks are consumed and reviewed by
