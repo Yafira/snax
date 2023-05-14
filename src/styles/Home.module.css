@@ -98,9 +98,9 @@
 	display: inline;
 }
 
-.card h5:hover {
+/* .card h5:hover {
 	font-weight: bold;
-}
+} */
 
 .card:hover {
 	border: 3px solid #a1a1f8;
@@ -114,15 +114,27 @@
 }
 
 .hrec h5 {
-	background-color: rgb(246, 173, 246);
+	background-color: #fcd5b7;
+}
+
+.hrec h5:hover {
+	background-color: #ffecd6;
 }
 
 .rec h5 {
 	background-color: rgb(211, 244, 161);
 }
 
+.rec h5:hover {
+	background-color: rgb(224, 249, 186);
+}
+
 .outstanding h5 {
 	background-color: rgb(177, 241, 243);
+}
+
+.outstanding h5:hover {
+	background-color: rgb(203, 247, 249);
 }
 
 @media screen and (max-width: 750px) {
