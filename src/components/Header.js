@@ -23,7 +23,7 @@ export default function Header() {
 				</p>
 				<h5>
 					All snacks are consumed and reviewed by
-					<Link href='https://yafira.dev'> Yafira ✿ </Link>
+					<Link href='https://bento.me/electrocute'> Yafira ✿ </Link>
 				</h5>
 			</div>
 		</div>
