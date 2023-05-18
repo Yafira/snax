@@ -24,4 +24,4 @@
 
 ---
 
-Check it out [here!](https://snaxblog.vercel.app/)
+Check it out [here!](https://snax.blog/)
