@@ -19,7 +19,8 @@ export default function Header() {
 				</Link>
 				<h3>eat, drink, color</h3>
 				<p>
-					Like a Pokedex but for vegan and plant-based snacks, also peanut-free.{' '}
+					Like a Pokedex but for vegan/plant-based snacks and bevs, also a
+					peanut-free zone.{' '}
 				</p>
 				<h5>
 					All snacks are consumed and reviewed by
