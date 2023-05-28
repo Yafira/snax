@@ -109,4 +109,8 @@
 	.Header h5 {
 		font-size: 11px;
 	}
+	.snaxBox {
+		border-radius: 0;
+		margin: 0;
+	}
 }
