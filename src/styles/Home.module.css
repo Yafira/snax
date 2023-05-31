@@ -98,9 +98,9 @@
 	display: inline;
 }
 
-/* .card h5:hover {
-	font-weight: bold;
-} */
+.card h5:hover {
+	background-color: #b7b7fd;
+}
 
 .card:hover {
 	border: 3px solid #a1a1f8;
