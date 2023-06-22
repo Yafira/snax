@@ -23,7 +23,7 @@ export default function Document() {
 				/>
 				<link rel='manifest' href='/site.webmanifest' />
 				<link rel='mask-icon' href='/safari-pinned-tab.svg' color='#000000' />
-				<meta name='msapplication-TileColor' content='#603cba' />
+				<meta name='msapplication-TileColor' content='#00aba9' />
 				<meta name='theme-color' content='#ffffff' />
 			</Head>
 			<body>
