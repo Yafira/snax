@@ -15,30 +15,32 @@ const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 			className={styles.imgWrap}
 		/>
 
-		<h3>{title}</h3>
+		<div className={styles.division}>
+			<h3>{title}</h3>
 
-		<p>{description}</p>
+			<p>{description}</p>
 
-		<h4>{rating}</h4>
+			<h4>{rating}</h4>
 
-		<div className={styles.tags}>
-			{tags.map((tag, key) => {
-				const tagText = tagPage ? tag.name : tag
+			<div className={styles.tags}>
+				{tags.map((tag, key) => {
+					const tagText = tagPage ? tag.name : tag
 
-				return (
-					<Link key={key} href={`/tags/${tagText}`}>
-						<div
-							className={clsx({
-								[styles.hrec]: tagText === 'highly recommended',
-								[styles.rec]: tagText === 'recommended',
-								[styles.outstanding]: tagText === 'outstanding',
-							})}
-						>
-							<h5>{tagText}</h5>
-						</div>
-					</Link>
-				)
-			})}
+					return (
+						<Link key={key} href={`/tags/${tagText}`}>
+							<div
+								className={clsx({
+									[styles.hrec]: tagText === 'highly recommended',
+									[styles.rec]: tagText === 'recommended',
+									[styles.outstanding]: tagText === 'outstanding',
+								})}
+							>
+								<h5>{tagText}</h5>
+							</div>
+						</Link>
+					)
+				})}
+			</div>
 		</div>
 	</section>
 )
