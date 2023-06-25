@@ -10,7 +10,7 @@ export default function PostListTags({ posts }) {
 			<ResponsiveMasonry
 				columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1000: 4, 1200: 5 }}
 			>
-				<Masonry gutter={10}>
+				<Masonry gutter={24}>
 					{posts?.map((post, index) => (
 						<PostItem
 							key={index}
