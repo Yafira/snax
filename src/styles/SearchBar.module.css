@@ -1,32 +1,26 @@
-/* Style for the search bar container */
 .searchContainer {
-	margin: 20px 50px; /* Adjust the margin as needed */
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 50px;
 }
 
-/* Style for the search input field */
 .searchInput {
-	width: 300px; /* Adjust the width as needed */
-	padding: 10px;
-	border: 2px solid #ccc;
+	padding: 8px;
+	border: 1px solid rgb(247, 208, 220);
 	border-radius: 5px;
-	font-size: 16px;
-	outline: none;
 }
 
-/* Style for the search button */
 .searchButton {
-	background-color: #a783e3; /* You can choose a different color */
-	color: white;
+	background-color: rgb(247, 208, 220);
+	color: rgb(0, 0, 0);
 	border: none;
-	border-radius: 5px;
-	padding: 10px 20px;
-	font-size: 16px;
+	border-radius: 4px;
+	padding: 8px 12px;
 	cursor: pointer;
-	margin-left: 10px; /* Add some space between the input and the button */
 }
 
-/* Style for the search button on hover */
-.searchBar button:hover {
-	background-color: #8356a7; /* Change the color on hover */
+.searchButton:hover {
+	background-color: #fbe5e2;
 }
