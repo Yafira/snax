@@ -41,7 +41,7 @@ const SearchPage = ({ searchResults }) => {
 
 			<SearchBar onSearch={handleSearch} />
 			<div className={styles.container}>
-				<h2>Search Results for {query} </h2>
+				<h2>search results for `{query}` </h2>
 			</div>
 			{isLoading ? (
 				<div className={styles.container}>

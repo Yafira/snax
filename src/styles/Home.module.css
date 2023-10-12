@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	user-select: none;
+	text-align: center;
 }
 
 .container {
@@ -115,6 +116,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	text-align: center;
 }
 
 .hrec h5 {
