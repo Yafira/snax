@@ -70,7 +70,7 @@ const SearchPage = ({ searchResults }) => {
 											key={index}
 											imgURL={result.image}
 											title={result.title}
-											link={result.link}
+											rating={result.rating}
 											description={result.description}
 											tags={result.tags}
 										/>
