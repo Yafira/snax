@@ -33,6 +33,8 @@ const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 									[styles.hrec]: tagText === 'highly recommended',
 									[styles.rec]: tagText === 'recommended',
 									[styles.outstanding]: tagText === 'outstanding',
+									[styles.country]:
+										tagText === 'dominican republic' || tagText === 'finland',
 								})}
 							>
 								<h5>{tagText}</h5>

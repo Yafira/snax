@@ -143,6 +143,14 @@
 	background-color: rgb(203, 247, 249);
 }
 
+.country h5 {
+	background-color: rgb(203, 220, 249);
+}
+
+.country h5:hover {
+	background-color: rgb(220, 231, 249);
+}
+
 @media screen and (max-width: 750px) {
 	.columns {
 		column-gap: 0px;
