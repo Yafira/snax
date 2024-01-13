@@ -136,11 +136,11 @@
 }
 
 .outstanding h5 {
-	background-color: rgb(177, 241, 243);
+	background-color: rgb(165, 156, 241);
 }
 
 .outstanding h5:hover {
-	background-color: rgb(203, 247, 249);
+	background-color: rgb(194, 188, 246);
 }
 
 .country h5 {
