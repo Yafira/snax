@@ -97,14 +97,14 @@
 	margin: 3px;
 	font-size: 0.8rem;
 	font-weight: normal;
-	background-color: rgb(255, 227, 237);
+	background-color: rgb(252, 208, 224);
 	border: rgb(92, 79, 202) 1px solid;
 	border-radius: 50px;
 	display: inline;
 }
 
 .card h5:hover {
-	background-color: #b7b7fd;
+	background-color: rgb(254, 224, 235);
 }
 
 .card:hover {
