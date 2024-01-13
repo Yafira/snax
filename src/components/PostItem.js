@@ -32,7 +32,7 @@ const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 								className={clsx({
 									[styles.hrec]: tagText === 'highly recommended',
 									[styles.rec]: tagText === 'recommended',
-									[styles.outstanding]: tagText === '*･ﾟ✧ outstanding ✧･ﾟ*',
+									[styles.outstanding]: tagText === 'outstanding',
 									[styles.country]:
 										tagText === 'dominican republic' || tagText === 'finland',
 								})}
