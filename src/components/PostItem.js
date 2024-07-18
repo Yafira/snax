@@ -34,7 +34,7 @@ const PostItem = ({ imgURL, title, rating, description, tags, tagPage }) => (
 									[styles.rec]: tagText === 'recommended',
 									[styles.outstanding]: tagText === 'outstanding',
 									[styles.country]:
-										tagText === 'dominican republic' || tagText === 'finland',
+										tagText === 'dominican republic' || tagText === 'finland' || tagText === 'spain'
 								})}
 							>
 								<h5>{tagText}</h5>
